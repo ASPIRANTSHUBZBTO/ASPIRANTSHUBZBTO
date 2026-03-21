@@ -481,3 +481,12 @@ form button {
 #courses p{
     text-align: center;
 }
+#courses {
+    background-color: #f5f7fa;
+}
+
+.course-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
