@@ -332,11 +332,11 @@ footer {
 
 /* IMAGE (DOMINANT) */
 .mentor-row img {
-    width: 160px;        /* 🔥 bigger image */
+    width: 160px;
     height: 160px;
     object-fit: cover;
-    border-radius: 12px;
-    flex-shrink: 0;
+    object-position: top;
+    transform: scale(1.05);
 }
 
 /* DETAILS WRAPPER */
@@ -380,4 +380,41 @@ footer {
 }
 .mentor-row img {
     border: 3px solid #f5f5f5;
+}
+
+.hero {
+    position: relative;
+    height: 90vh;
+    background: url("assets/hero-bg.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 🔥 THIS IS THE REAL FIX */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* CONTENT ABOVE OVERLAY */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+}
+
+.hero a {
+    padding: 12px 22px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+    text-decoration: none;
 }
