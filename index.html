@@ -7,6 +7,7 @@
 <link rel="icon" type="image/png" href="assets/favicon.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -39,10 +40,10 @@
     <div class="hero-overlay"></div>
 
     <div class="hero-content container">
-        <h1>Crack Competitive Exams with Confidence</h1>
-        <p>NPSC | NSSB | Various State Competitive Exams</p>
+        <h1 style="font-size: 2.1vw;">Crack Competitive Exams with Confidence</h1>
+        <h2>NPSC | NSSB | Various State Competitive Exams</h2>
 
-        <div>
+        <div style="padding-top: 30%;">
             <a href="#admission" class="btn primary">Enroll Now</a>
             <a href="#contact" class="btn secondary">Contact Us</a>
         </div>
@@ -124,13 +125,13 @@
 
         <div class="grid two">
             <div class="card">
-                <h3>NPSC Foundation</h3>
+                <h2>NPSC Foundation</h2>
                 <p>Duration: 6–8 Months</p>
                 <p class="price">₹30,000</p>
             </div>
 
             <div class="card">
-                <h3>NSSB Foundation</h3>
+                <h2>NSSB Foundation</h2>
                 <p>Duration: 3–4 Months</p>
                 <p class="price">₹15,000</p>
             </div>
@@ -166,27 +167,49 @@
         <h2>Apply for Admission</h2>
 
         <form id="form">
-            <input type="text" placeholder="Name" required>
-            <input type="tel" placeholder="Phone Number" required>
-            <input type="text" placeholder="Course">
-            <input type="text" placeholder="Qualification">
+            <input type="text" placeholder="Enter your full name" minlength="2" required>
+            <input type="tel" placeholder="Phone Number" maxlength="10" pattern="[6-9]{1}[0-9]{9}" required>
+            <input type="text" placeholder="Course" minlength="2">
+            <input type="text" placeholder="Qualification" minlength="2">
             <button type="submit">Submit Application</button>
         </form>
     </div>
 </section>
 
 <!-- CONTACT -->
-<footer id="contact">
-    <div class="container">
+<section id="contact" class="contact section">
+    <div class="container contact-container">
+
         <h2>Contact Us</h2>
-        <p>Aspirants Hub</p>
-        <p>Daily market / Project Colony</p>
-        <p>Zunheboto, Nagaland</p>
-        <p>Phone: +91 7005527009 / 9615355829</p>
+        <p class="contact-subtext">
+            Reach out to us for guidance, mentorship, or any queries.
+        </p>
+
+        <div class="contact-details">
+            <p><strong>Aspirants Hub Zunheboto</strong></p>
+            <p>Near Police Point / DC Office Junction</p>
+            <p>Zunheboto, Nagaland</p>
+            <p>📞 +91 00000000 / 0000000000</p>
+        </div>
+
+        <!-- WHATSAPP CTA -->
+        <a href="https://wa.me/917005527009?text=Hello%20I%20am%20interested%20in%20Aspirants%20Hub" 
+           class="whatsapp-btn" 
+           target="_blank">
+            💬 Chat on WhatsApp
+        </a>
+
+        <!-- SOCIAL LINKS -->
+        <div class="social-links">
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href="https://www.instagram.com/aspirants_hub_zbto?igsh=MWkyYmluODFwZ3Rldw==" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a>
+            <a href="https://t.me/Aspirantshubzunheboto" target="_blank"><i class="fa-brands fa-telegram"></i> Telegram</a>
+        </div>
+
     </div>
-</footer>
+</section>
 
 <script src="script.js"></script>
-
 </body>
 </html>
