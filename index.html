@@ -43,7 +43,7 @@
         <p>NPSC | NSSB | Various State Competitive Exams</p>
 
         <div>
-            <button class="primary">Enroll Now</button>
+            <button class="primary" click="#admission">Enroll Now</button>
             <button class="secondary">Contact Us</button>
         </div>
     </div>
@@ -153,8 +153,14 @@
         </div>
     </div>
 </section>
+<section id="mentors" class="container">
+    <h2 class="section-title">Our Mentors</h2>
 
-<div id="mentors" style="display:flex;flex-wrap:wrap;gap:20px;"></div>
+    <div id="mentors-list">
+        <!-- Mentors will be loaded dynamically -->
+    </div>
+</section>
+<!-- <div id="mentors-old" style="display:flex;flex-wrap:wrap;gap:20px;"></div>
 <script>
 fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vQjjPFy4GO0YnuCUwCSuWDPAvVobgqBtTjUc-EaSyQacBnZLEAUEEWax9NNq9yqC-cMkaCyDwAj3Ut6/pub?output=csv")
 .then(res => res.text())
@@ -180,7 +186,7 @@ fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vQjjPFy4GO0YnuCUwCSuWDPAv
 
   document.getElementById("mentors").innerHTML = html;
 });
-</script>
+</script> -->
 <!-- ADMISSION -->
 <section id="admission" class="section light">
     <div class="container">
